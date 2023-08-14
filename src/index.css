@@ -1,0 +1,32 @@
+/* Import the League Spartan font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Set up Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the base styles in the base layer */
+@layer base {
+  body {
+    /* Common styles */
+    font-size: 12px;
+    font-family: "Kumbh Sans", sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      to bottom,
+      hsl(273, 75%, 66%),
+      hsl(240, 73%, 65%)
+    );
+  }
+  .mainWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
