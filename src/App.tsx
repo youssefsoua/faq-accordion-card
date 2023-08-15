@@ -41,24 +41,39 @@ const questionsList: Question[] = [
 
 const App = () => {
   return (
-    <div className="flex w-[90%] flex-col items-center justify-center rounded-3xl bg-white px-6 py-10 sm:w-2/3 sm:flex-row sm:overflow-hidden sm:py-20">
-      <div className="relative flex h-20 w-[100%] justify-center sm:h-[100%]">
+    <div className="relative flex w-[90%] flex-col items-center justify-center rounded-3xl bg-white px-6 py-10 shadow-2xl lg:w-[950px] lg:flex-row lg:py-16">
+      <div className="relative flex h-20 w-[100%] justify-center lg:h-[100%]">
         <img
           src="./illustration-woman-online-mobile.svg"
           alt="LOGO"
-          className="absolute mt-[-9.25rem] w-60 sm:hidden"
+          className="absolute mt-[-9.25rem] w-60 lg:hidden"
         />
         <img
           src="./bg-pattern-mobile.svg"
           alt="LOGO"
-          className="absolute mt-[-2.5rem] w-60 sm:hidden"
+          className="absolute mt-[-2.5rem] w-60 lg:hidden"
+        />
+        <img
+          src="./illustration-woman-online-desktop.svg"
+          alt="LOGO"
+          className="absolute right-[15%] hidden lg:block"
+        />
+        <img
+          src="./bg-pattern-desktop.svg"
+          alt="LOGO"
+          className="absolute hidden lg:block"
+        />
+        <img
+          src="./illustration-box-desktop.svg"
+          alt="LOGO"
+          className="absolute right-[90%] top-[33%] hidden lg:block"
         />
       </div>
-      <div className="flex w-[100%] flex-col py-2 sm:px-16 sm:py-0">
-        <h1 className="text-center text-3xl font-bold text-very-dark-desaturated-blue sm:text-left sm:text-4xl">
+      <div className="flex w-[100%] flex-col py-2 lg:h-[100%] lg:px-16 lg:py-0">
+        <h1 className="text-center text-3xl font-bold text-very-dark-desaturated-blue lg:text-left lg:text-4xl">
           FAQ
         </h1>
-        <div className="w-[100%] p-1 sm:px-0 sm:py-4">
+        <div className="w-[100%] p-1 lg:px-0 lg:py-4">
           {questionsList.map((question) => (
             <ExpendableItem {...question} />
           ))}
