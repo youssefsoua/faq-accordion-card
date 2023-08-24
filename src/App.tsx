@@ -41,8 +41,8 @@ const questionsList: Question[] = [
 
 const App = () => {
   return (
-    <div className="relative flex w-[90%] flex-col items-center justify-center rounded-3xl bg-white px-6 py-10 shadow-2xl lg:w-[950px] lg:flex-row lg:py-16">
-      <div className="relative flex h-20 w-[100%] justify-center lg:h-[100%]">
+    <article className="relative flex w-[90%] flex-col items-center justify-center rounded-3xl bg-white px-6 py-10 shadow-2xl lg:w-[950px] lg:flex-row lg:py-16">
+      <section className="relative flex h-20 w-[100%] justify-center lg:h-[100%]">
         <img
           src="./illustration-woman-online-mobile.svg"
           alt="LOGO"
@@ -68,8 +68,8 @@ const App = () => {
           alt="LOGO"
           className="absolute right-[90%] top-[33%] hidden lg:block"
         />
-      </div>
-      <div className="flex w-[100%] flex-col py-2 lg:h-[100%] lg:px-16 lg:py-0">
+      </section>
+      <section className="flex w-[100%] flex-col py-2 lg:h-[100%] lg:px-16 lg:py-0">
         <h1 className="text-center text-3xl font-bold text-very-dark-desaturated-blue lg:text-left lg:text-4xl">
           FAQ
         </h1>
@@ -78,8 +78,8 @@ const App = () => {
             <ExpendableItem {...question} />
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 
